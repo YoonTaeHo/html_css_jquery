@@ -7,11 +7,17 @@
 
 <script type="text/javascript">
 	var temp = ['hello','world','oracle','java']
+	var temp2 = ["test","test1"]
+
+	temp.push(temp2)
+
+	temp = temp.concat(temp2);
 
 	for(var i=0;i<temp.length;i++){
 		console.log(temp[i])
-		console.log(temp.length)
 	}
+
+	document.write(temp.length)
 
 </script>
 </body>

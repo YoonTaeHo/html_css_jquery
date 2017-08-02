@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<h1 class='intro'> This is heading </h1>
+<p class="intro"> This is Paragragh </p>
+<p class="intro"> This is another </p>
+
+<p>List1</p>
+<ul>
+	<li>coffee</li>
+	<li>milk</li>
+	<li>tea</li>
+</ul>
+<p>List2</p>
+<ul>
+	<li>coffee</li>
+	<li>milk</li>
+	<li>tea</li>
+</ul>
+<a href="http://www.naver.com">naver</a>
+<a href="http://www.daum.net" target="_blank">daum</a>
+
+<input type="button" id="myButton" value="button">
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#myButton').click(function(){
+			//$('*').hide()
+			//$(this).hide() // this 는 button을 가리켜서 button만 사라지게 됨
+			//$('p.intro').hide()  // p 태그의 intro 클래스만 사라짐
+			//$('p:first').hide()  // p 태그의 첫번째 intro 클래스만 사라짐
+			//$('ul li:first').hide()
+			//$('ul li:first-child').hide()
+			//$('[href]').hide()
+			$('a[target="_blank"]').hide() // a태그의 타겟이 _blank인것만 사라지게 
+		})
+	})
+
+</script>
+
+</body>
+</html>

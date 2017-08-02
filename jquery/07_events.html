@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<p> hello world </p>
+
+Name : <input type="text"><br>
+Email : <input type="text">
+
+<style type="text/css">
+	.blue{
+		background-color: blue;
+	}
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+//		$('p').dblclick(function(){
+			//$(this).hide()
+			/*
+			$('p').mouseenter(function(){
+				$(this).addClass('blue')
+			})
+			$('p').mouseleave(function(){
+				$(this).removeClass('blue')
+			})
+			
+			$('p').mouseup(function(){
+				alert('up')
+			})
+			$('p').mousedown(function(){
+				alert('down')
+			})
+			
+//		})
+			$('p').hover(function(){
+				$(this).addClass('blue')
+			}, function(){
+				$(this).removeClass('blue')
+			})
+			
+
+			$('input').focus(function(){	// 텍스트 상자를 클릭했을때
+				$(this).css('background-color','gray')
+			}) 
+
+			$('input').blur(function(){	// focus 가 다른데로 갔을때..주로 값 정합성 체크할때 blur 이벤트에서 많이 함
+				$(this).css('background-color','white')
+			}) 
+			*/
+			$('p').on({
+				mouseenter:function(){
+					$(this).addClass('blue')
+				},
+				mouseleave:function(){
+					$(this).removeClass('blue')	
+				},
+				click:function(){
+					$(this).css('background-color','red')
+				}
+			})
+	})
+</script>
+</body>
+</html>
