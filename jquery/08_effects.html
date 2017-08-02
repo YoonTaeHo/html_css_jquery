@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<style type="text/css">
+	#panel1, #panel2, #panel3{
+		padding: 5px;
+		text-align: center;
+		background-color: yellow;
+		border: 1px solid black;
+	}
+	#panel2{
+		display: none;
+		padding: 50px;
+	}
+	#panel3{
+		width: 100px;
+		height: 100px;
+		position: absolute;
+	}
+</style>
+<div id="panel1">click to slide down</div>
+<div id="panel2">dkdkdkdkdkdkdk</div>
+
+<p>hello world</p>
+<p>oracle java</p>
+
+<input type="button" value="button" id="myButton">
+
+<div id="panel3">a;a;;a;a;aa;;</div>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		/*
+		$('#myButton').click(function(){
+			//$('p').hide(1000)
+			//$('p').toggle()
+			//$('p').fadeOut()
+			//$('p').fadeToggle()
+			//$('p').fadeTo(1000,0.5)
+			$('#panel3').animate({
+				left:'+=100px'
+			},1000)
+		})
+		$('#panel1').click(function(){
+			$('#panel2').slideToggle(1000)
+		})
+		*/
+		$('#myButton').click(function(){
+		var myDiv = $('#panel3')
+		/*
+		myDiv.animate({
+			height : '300px',
+			opacity : '0.5'
+		},1000)
+		myDiv.animate({
+			width : '300px',
+			opacity : '0.9'
+		})
+		myDiv.animate({
+			height : '100px',
+			opacity : '1.9'
+		})
+		myDiv.animate({
+			width : '100px',
+			opacity : '1.0'
+		})
+		*/
+		myDiv.animate({
+			left:'100px'
+		})
+		myDiv.animate({
+			fontSize:'3em'
+		})
+	})
+	})
+</script>
+</body>
+</html>
